@@ -1,8 +1,8 @@
 .text
-.global _main
+.global _start
 .align 2
 
-_main:
+_start:
     b _printf
     b _terminate
 
