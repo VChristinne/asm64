@@ -9,8 +9,8 @@ _start:
     ldr x1, =num
     ldr x2, [x1]
 
-    // Multiplica 'result' por 2
-    lsl x2, x2, #1  // Multiplica x2 por 2 (deslocamento à esquerda por 1 bit)
+    // multiplica 'result' por 2
+    lsl x2, x2, #1              // multiplica x2 por 2 (deslocamento à esquerda por 1 bit)
 
     // print result
     mov x0, #1        
