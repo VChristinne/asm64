@@ -1,2 +1,9 @@
 /.DS_Store
 basic_ex/divide.o
+basic_ex/add
+.gitignore
+basic_ex/calculator.o
+.gitignore
+basic_ex/add.o
+basic_ex/calculator
+basic_ex/divide

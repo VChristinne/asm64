@@ -8,8 +8,13 @@
 _start:
     ldr x1, =num
     ldr x2, [x1]
-    sdiv x2, x2, #2  // divide 'result' por 2
   
+    // divide 'result' por 2
+    lsr x2, x2, #1  
+
+    // armazena o resultado de volta em 'result'
+    str x2, [x1]
+
     mov x0, #1        // stdout
     ldr x1, =result   // endereço do valor a ser impresso
     ldr x2, [x1]      // carrega o valor de memória no registrador x2
