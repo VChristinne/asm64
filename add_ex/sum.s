@@ -7,14 +7,15 @@
 .align 2
 
 _start:
-    b _add
+    mov x0, #1       
+    mov x1, #2
+    bl _add  
+    mov x2, x0
+    mov x16, #64             // sys_write
     b _terminate
 
 _add:
-    ldr x1, =num 
-    add x2, x2, #1          // adiciona 1 a 'result'
-    mov x16, #4             // sys_write
-    svc 0            
+    add x0, x0, x1
 
 _terminate:
     mov x0, #0
